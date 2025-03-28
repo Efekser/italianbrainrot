@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italian Brainrot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image\\rmf.jpg" href="image\\rmf.jpg" class="logo">
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+          <img src="image/bobrito.jpg">
+          <audio id="ses1" src="audio\\bobrito.mp3"></audio>
+          <div class="buttons">
+              <button onclick="playSound('ses1')">✔️</button>
+              <button onclick="stopSound('ses1')">❌</button>
+          </div>
+        </div>
+        
+        <div class="item">
+          <img src="image/celeste.png">
+          <audio id="ses2" src="audio\\celeste.mp3"></audio>
+          <div class="buttons">
+            <button onclick="playSound('ses2')">✔️</button>
+            <button onclick="stopSound('ses2')">❌</button>
+          </div>
+        </div>
+      
+        <div class="item">
+          <img src="image/croco.jpg">
+          <audio id="ses3" src="audio\\bomba.mp3"></audio>
+          <div class="buttons">
+            <button onclick="playSound('ses3')">✔️</button>
+            <button onclick="stopSound('ses3')">❌</button>
+          </div>
+        </div>
+      
+        <div class="item">
+          <img src="image\\gusi.jpg">
+          <audio id="ses4" src="audio/gusini.mp3"></audio>
+          <div class="buttons">
+            <button onclick="playSound('ses4')">✔️</button>
+            <button onclick="stopSound('ses4')">❌</button>
+          </div>
+        </div>
+      
+        <div class="item">
+          <img src="image\\lavaca.png">
+          <audio id="ses5" src="audio\\lavaca.mp3"></audio>
+          <div class="buttons">
+            <button onclick="playSound('ses5')">✔️</button>
+            <button onclick="stopSound('ses5')">❌</button>
+          </div>
+        </div>
+      
+        <div class="item">
+          <img src="image\\lirili.png">
+          <audio id="ses6" src="audio\\lirili.mp3"></audio>
+          <div class="buttons">
+            <button onclick="playSound('ses6')">✔️</button>
+            <button onclick="stopSound('ses6')">❌</button>
+          </div>
+        </div>
+      
+        <div class="item">
+          <img src="image\\shimpa.jpg">
+          <audio id="ses7" src="audio\\shimpa.mp3"></audio>
+          <div class="buttons">
+            <button onclick="playSound('ses7')">✔️</button>
+            <button onclick="stopSound('ses7')">❌</button>
+          </div>
+        </div>
+      
+        <div class="item">
+          <img src="image\\trala.webp">
+          <audio id="ses8" src="audio\\trala.mp3"></audio>
+          <div class="buttons">
+            <button onclick="playSound('ses8')">✔️</button>
+            <button onclick="stopSound('ses8')">❌</button>
+          </div>
+        </div>
+      </div>
+      
+      <script>
+        function playSound(id) {
+            let audio = document.getElementById(id);
+            audio.play();
+        }
+
+        function stopSound(id) {
+            let audio = document.getElementById(id);
+            audio.pause();
+            audio.currentTime = 0;
+        }
+      </script>
+
+</body>
+</html>
